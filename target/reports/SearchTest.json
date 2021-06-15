@@ -1,0 +1,251 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9163000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that I access the Automation practice page",
+            "match": {
+              "location": "steps.BaseStepsDefinitions.UrlBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4135000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click in Sign In Link",
+            "match": {
+              "location": "steps.SignInStepsDefinitions.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4345000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login with the email datumqatest@soprock.com and password datum2021",
+            "match": {
+              "arguments": [
+                {
+                  "val": "datumqatest@soprock.com",
+                  "offset": 23
+                },
+                {
+                  "val": "datum2021",
+                  "offset": 60
+                }
+              ],
+              "location": "steps.SignInStepsDefinitions.login(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T04:23:03.810Z",
+        "line": 8,
+        "name": "Search item successfully",
+        "description": "",
+        "id": "search;search-item-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseStepsDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3252000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search by item Blouse",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.SearchStepsDefinitions.search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should I view the search page with searched Blouse",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 44
+                }
+              ],
+              "location": "steps.SearchStepsDefinitions.returnSearch(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15544000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that I access the Automation practice page",
+            "match": {
+              "location": "steps.BaseStepsDefinitions.UrlBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2414000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click in Sign In Link",
+            "match": {
+              "location": "steps.SignInStepsDefinitions.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3666000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login with the email datumqatest@soprock.com and password datum2021",
+            "match": {
+              "arguments": [
+                {
+                  "val": "datumqatest@soprock.com",
+                  "offset": 23
+                },
+                {
+                  "val": "datum2021",
+                  "offset": 60
+                }
+              ],
+              "location": "steps.SignInStepsDefinitions.login(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T04:23:25.010Z",
+        "line": 12,
+        "name": "View details of searched item",
+        "description": "",
+        "id": "search;view-details-of-searched-item",
+        "after": [
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseStepsDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3323000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I search by item Blouse",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.SearchStepsDefinitions.search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4046000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click Image View More to see the item information",
+            "match": {
+              "location": "steps.SearchStepsDefinitions.moreItemInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "should I view the item page with all the information by item Blouse",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 61
+                }
+              ],
+              "location": "steps.SearchStepsDefinitions.returnMoreItemInformation(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchTest.feature",
+    "tags": []
+  }
+]

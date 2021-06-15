@@ -1,0 +1,217 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T04:25:03.037Z",
+        "line": 3,
+        "name": "Successfully Register Customer",
+        "description": "",
+        "id": "register-customer;successfully-register-customer",
+        "after": [
+          {
+            "result": {
+              "duration": 202000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseStepsDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13233000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that I access the Automation practice page",
+            "match": {
+              "location": "steps.BaseStepsDefinitions.UrlBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2166000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click in Sign In Link",
+            "match": {
+              "location": "steps.SignInStepsDefinitions.clickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 565000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill in the email and then confirm the start of registration",
+            "match": {
+              "location": "steps.SignInStepsDefinitions.startRegistration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7163000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in the requested data of my user and then finish the registration",
+            "match": {
+              "location": "steps.SignUpFormStepsDefinitions.registerCustomer(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Val"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "DAmato"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "123456"
+                ]
+              },
+              {
+                "cells": [
+                  "day",
+                  "6"
+                ]
+              },
+              {
+                "cells": [
+                  "month",
+                  "12"
+                ]
+              },
+              {
+                "cells": [
+                  "year",
+                  "1990"
+                ]
+              },
+              {
+                "cells": [
+                  "firstNameAddress",
+                  "Val"
+                ]
+              },
+              {
+                "cells": [
+                  "lastNameAddress",
+                  "DAmato"
+                ]
+              },
+              {
+                "cells": [
+                  "company",
+                  "XPTO"
+                ]
+              },
+              {
+                "cells": [
+                  "address",
+                  "Times Square, 1020"
+                ]
+              },
+              {
+                "cells": [
+                  "city",
+                  "New York"
+                ]
+              },
+              {
+                "cells": [
+                  "state",
+                  "New York"
+                ]
+              },
+              {
+                "cells": [
+                  "postalCode",
+                  "10036"
+                ]
+              },
+              {
+                "cells": [
+                  "country",
+                  "United States"
+                ]
+              },
+              {
+                "cells": [
+                  "mobilePhone",
+                  "+1543456789"
+                ]
+              },
+              {
+                "cells": [
+                  "addressAlias",
+                  "Fifth Avenue, 2000"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "should I view the page name MY ACCOUNT in the My account page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.MyAccountStepsDefinitions.nameMyAccountPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "should I view the name Val DAmato in the user logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Val DAmato",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.MyAccountStepsDefinitions.nameUser(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Register customer",
+    "description": "",
+    "id": "register-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/RegisterCustomerTest.feature",
+    "tags": []
+  }
+]

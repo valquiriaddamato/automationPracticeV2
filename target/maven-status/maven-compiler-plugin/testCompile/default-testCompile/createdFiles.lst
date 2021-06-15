@@ -1,0 +1,5 @@
+pages\BasePage.class
+tests\RegisterCustomerTest.class
+pages\SignInPage.class
+tests\LoginTest.class
+pages\MyAccountPage.class
